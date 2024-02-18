@@ -1,0 +1,658 @@
+/* 
+Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/*################### LOGO & NAV ################### */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fdf2e9;
+  height: 100vh;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+.nav-lists {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+  align-items: center;
+}
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #cf711f;
+}
+
+.nav-link.btn--cta:link,
+.nav-link.btn--cta:visited {
+  border-radius: 9px;
+  padding: 1.2rem 2.4rem;
+
+  transition: all 0.3s;
+  cursor: pointer;
+  background-color: #e67e22;
+  color: #fff;
+}
+.nav-link.btn--cta:hover,
+.nav-link.btn--cta:active {
+  background-color: #cf711f;
+  color: #fff;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile[name="close-outline"] {
+  display: none;
+}
+.icon-mobile {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #333;
+}
+
+/*################### HERO SECTION ################### */
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+.hero-img {
+  width: 100%;
+  /* height: 50px; */
+}
+
+.btn--main:link,
+.btn--main:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--main:hover,
+.btn--main:active {
+  background-color: #cf711f;
+  color: #fff;
+}
+
+.btn--side:link,
+.btn--side:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--side:hover,
+.btn--side:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.meals-delivered {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  margin-top: 8rem;
+}
+.customers-img {
+  display: flex;
+}
+.customers-img img {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fff;
+}
+.customers-img img:last-child {
+  margin: 0;
+}
+.meals-delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.meals-delivered-text strong {
+  color: #cf711f;
+  font-weight: 700;
+}
+
+/*################### FEATURED IN SECTION ################### */
+
+.section-featured-in {
+  padding: 4.8em 0 3.2rem 0;
+}
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  color: #888;
+  margin-bottom: 2.4rem;
+}
+
+.company-logos {
+  display: flex;
+  justify-content: space-around;
+}
+.company-logo {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/*################### HOW IT WORKS SECTION ################### */
+
+.section-how-works {
+  padding: 9.6rem 0;
+}
+
+.number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.works-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.works-text-box {
+  align-items: center;
+}
+.works-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.app-img {
+  width: 35%;
+}
+
+.works-img-box::before,
+.works-img-box::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.works-img-box::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.works-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
+/*################### MEALS SECTION ################### */
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal {
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  transition: all 0.4s;
+}
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+.center--text {
+  text-align: center;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.tag {
+  display: inline-block;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+  border-radius: 100px;
+  margin-bottom: 1.2rem;
+  background-color: red;
+}
+.meal-tag {
+  display: flex;
+  gap: 0.4rem;
+}
+.vegetarian {
+  background-color: #51cf66;
+}
+.vegan {
+  background-color: #94d82d;
+}
+.paleo {
+  background-color: #ffd43b;
+}
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-card {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.meal-lists {
+  list-style: none;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+.meal-list {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+.meal-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+}
+.meal-list strong {
+  font-weight: 500;
+}
+
+.diet-lists {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.diet-list {
+  font-size: 1.8rem;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.diet-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.see-recipes:link,
+.see-recipes:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid currentColor;
+  color: #cf711f;
+  font-size: 1.8rem;
+}
+.see-recipes:hover {
+  border-bottom: 0.1rem solid transparent;
+  transition: all 0.3s;
+}
+
+/*################### TESTIMONIAL SECTION ################### */
+
+.section-testimonials {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+
+  background-color: #fdf2e9;
+}
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+.testimonial-customer-img {
+  border-radius: 50%;
+  width: 6.4rem;
+  margin-bottom: 1.2rem;
+}
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.gallery-item {
+  overflow: hidden;
+}
+.gallery-item img {
+  display: block;
+  transition: all 0.4s;
+  width: 100%;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/*################### PRICING SECTION ################### */
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  color: #333;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.price-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.price-details {
+  font-size: 1.8rem;
+
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.pricing-plan {
+  width: 75%;
+  border-radius: 11px;
+}
+
+.pricing-plan--starter {
+  padding: 4.8rem;
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+}
+
+.pricing-plan--complete {
+  padding: 4.8rem;
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  content: "best value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  color: #333;
+  padding: 0.8rem 8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transform: rotate(45deg);
+  background-color: #ffd43b;
+}
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.price-line {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 9.6rem;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.feature-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #cf711f;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  padding: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+/*################### CTA SECTION ################### */
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #cf711f; */
+  /* height: 50rem; */
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.cta *:focus {
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta .heading-secondary {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url(/content/img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  background-color: #fdf2e9;
+  color: inherit;
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 9px;
+}
+.cta-form input::placeholder {
+  color: #ccc;
+}
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  padding: 1.2rem;
+  align-self: end;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+/*################### FOOTER SECTION ################### */
+
+.section-footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.footer-link:link,
+.footer-link:visited {
+  cursor: pointer;
+  color: #767676;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.contacts {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-style: normal;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
